@@ -1,0 +1,131 @@
+.aside-section{
+    width: 306px;
+    height:1198px;
+    background: $background-color;
+}
+.title{
+    display: flex;
+    align-items: baseline;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+
+    padding-top:36px;
+    padding-bottom: 64px;
+
+&__icon {
+    display: inline-block;
+    margin-right: 8px;
+    width: 37px;
+    height: 37px;
+}
+
+&__span{
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.01em;
+
+        color: $third-text-color;
+
+        padding-top: 10px;
+        margin-left: 4px;;
+      
+}
+}
+
+.dashboard-box{
+    // margin-right: 28px;
+    // margin-left: 28px;
+    // margin-bottom: 0px;
+    // margin-top: 0px;
+    margin: 0px 28px;
+}
+
+.dashboard-list {
+    &__item {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+}
+
+&__link {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+
+    width: 250px;
+    height: 46px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+
+    color: $primary-link-color;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &--active {
+
+        color:$primary-white-color;
+        background:$accent-color
+    }
+
+    &:hover>.dashboard-list__icon{
+     
+     stroke: $primary-white-color;
+     
+    }
+
+         &:focus>.dashboard-list__icon{
+            stroke: $primary-white-color;
+         }
+        
+                  &:hover>.dashboard-list__icon--second {
+        
+                      stroke: $primary-white-color;
+        
+                  }
+        
+                  &:focus>.dashboard-list__icon--second {
+                      stroke: $primary-white-color;
+                  }
+
+}
+
+&__icon {
+
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    margin-left: 13px;
+
+    stroke:$primary-link-color;
+ 
+    
+    &--active {
+        stroke: $primary-white-color;
+     
+    }
+}
+
+}
+
+.dashboard-list__icon--second{
+    margin-left: auto;
+    margin-right: 14px;
+    width: 4px;
+    height: 8px;
+
+    stroke: $primary-link-color;
+    
+    &--active{
+        stroke: $primary-white-color;
+    }
+}
