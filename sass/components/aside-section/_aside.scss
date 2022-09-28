@@ -1,6 +1,6 @@
 .aside-section{
     width: 306px;
-    height:1198px;
+    height:1300px;
     background: $background-color;
     box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
 }
@@ -40,10 +40,6 @@
 }
 
 .dashboard-box{
-    // margin-right: 28px;
-    // margin-left: 28px;
-    // margin-bottom: 0px;
-    // margin-top: 0px;
     margin: 0px 28px;
 }
 
@@ -69,6 +65,9 @@
     letter-spacing: -0.01em;
 
     color: $primary-link-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
 
     &:hover,
     &:focus,
@@ -130,4 +129,32 @@
     &--active{
         stroke: $primary-white-color;
     }
+}
+
+.info-img{
+    display: flex;
+
+    margin-top: 598px;
+    padding-bottom: 76px;
+}
+
+.about-name{
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 12px;
+    
+        letter-spacing: 0.01em;
+    
+        color: #000000;
+}
+
+.about-job{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 12px;
+    letter-spacing: 0.01em;
+    
+    color: #757575;
 }
