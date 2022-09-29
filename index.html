@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dashboard_Customers</title>
     <link rel="stylesheet" href="./css//main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +17,60 @@
 </head>
 
 <body>
+<header class="header">
+    <div class="container header-section">
+        <!-- Название/логотип компании -->
+        <h2 class="header-title">
+            <svg class="header-title__icon">
+                <use href='./images/svg/icons.svg#icon-main-logo'>
+                </use>
+            </svg>
+            Dashboard <span class="header-title__span">v.01</span>
+        </h2>
+        
+        <!-- Навигация по сайту -->
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+                <use class="open-menu" href="./images/svg/icons.svg#open-menu"></use>
+                <use class="close-menu" href="./images/svg/icons.svg#close-menu"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu" id="menu-container" data-menu>
+            <nav>
+                <ul class="mobile-navigation">
+                    <li class="mobile-navigation__item">
+                        <a href="./index.html"
+                            class="mobile-navigation__link mobile-navigation__link">Dashboard</a>
+                    </li>
+                    <li class="mobile-navigation__item">
+                        <a href="./portfolio.html" class="mobile-navigation__link">Product</a>
+                    </li>
+                    <li class="mobile-navigation__item">
+                        <a href="" class="mobile-navigation__link mobile-navigation__link--active">Customers</a>
+                    </li>
+                    <li class="mobile-navigation__item">
+                        <a href="" class="mobile-navigation__link ">Income</a>
+                    </li>
+                    <li class="mobile-navigation__item">
+                        <a href="" class="mobile-navigation__link ">Promote</a>
+                    </li>
+                    <li class="mobile-navigation__item">
+                        <a href="" class="mobile-navigation__link ">Help</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Контакты -->
+           
+        </div>
+       
+</header>
     <main>
     <div class="container">
     <section class="hero-section">
         <h1 class="hero-title">Hello Evano <svg class="hero-title__icon">
             <use href="./images/svg/icons.svg#icon-Emoji"></use>
-        </svg>,</h1>
+        </svg>
+    </h1>
 
         <article class="customers-card">
             <div class="info-card">
@@ -37,6 +85,17 @@
         </label>
             </div>
             <p class="info-card__text">Active Members</p>
+
+                <div class="mobile-items">
+                    <ul class="mobile-nav">
+                        <li class="mobile-nav__item">Customer Name</li>
+                        <li class="mobile-nav__item">Company</li>
+                        <li class="mobile-nav__item">Phone Number</li>
+                        <li class="mobile-nav__item">Email</li>
+                        <li class="mobile-nav__item">Country</li>
+                        <li class="mobile-nav__item">Status</li>
+                    </ul>
+                </div>
          <div class="header-items">
             <ul class="nav">
                 <li class="nav__item">Customer Name</li>
@@ -127,12 +186,12 @@
                     <li class="eight-information-list__item">Åland Islands</li>
                     <li class="eight-information-list__item">
                         <a class="eight-information-list__link second-information-list__link--active" href="">Inactive</a></li>
-                    </li>
                 </ul>
                 
          </div>
         <div class="pagination">
             <p class="pagination-text">Showing data 1 to 8 of 256K entries</p>
+            <div class="pagination-box">
             <span class="btn-prev btn-next">
                 <svg class="btn-prev__icon btn-next-icon">
                     <use href="./images/svg/icons.svg#icon-left-frame">
@@ -140,7 +199,7 @@
                     </use>
                 </svg>
             </span>
-            <strong class="tui-page-btn tui-is-selected" href="">1</strong>
+            <strong class="tui-page-btn tui-is-selected">1</strong>
             <a class="tui-page-btn" href="">2</a>
             <a class="tui-page-btn" href="">3</a>
             <a class="tui-page-btn" href="">4</a>
@@ -153,27 +212,29 @@
                     </use>
                 </svg>
             </span>
+            </div>
         </div>
         </article>  
     </section>
+    
    <aside class="aside-section">
     <h2 class="title">
-        <svg class ="title__icon">
+         <svg class ="title__icon">
             <use href='./images/svg/icons.svg#icon-main-logo'>
             </use>
-        </svg>
-        Dashboard <span class="title__span">v.01</span></h1>
-        <div class="dashboard-box">
-        <ul class="dashboard-list">
-        <li class="dashboard-list__item">
+         </svg>
+          Dashboard <span class="title__span">v.01</span></h2>
+         <div class="dashboard-box">
+         <ul class="dashboard-list">
+         <li class="dashboard-list__item">
             <a class="dashboard-list__link" href="">
                 <svg class="dashboard-list__icon">
                     <use href="./images/svg/icons.svg#icon-key">
                     </use>
                 </svg>
                 Dashboard</a>
-        </li>
-        <li class="dashboard-list__item">
+         </li>
+         <li class="dashboard-list__item">
              <a class="dashboard-list__link" href="">
                 <svg class="dashboard-list__icon">
                     <use href="./images/svg/icons.svg#icon-square">
@@ -184,8 +245,8 @@
                     <use href="./images/svg/icons.svg#icon-vector"></use>
                 </svg>
             </a>
-        </li>
-        <li class="dashboard-list__item">
+         </li>
+         <li class="dashboard-list__item">
              <a class="dashboard-list__link dashboard-list__link--active" href="">
                 <svg class="dashboard-list__icon dashboard-list__icon--active">
                     <use href="./images/svg/icons.svg#icon-user">
@@ -195,8 +256,8 @@
             <svg class="dashboard-list__icon--second dashboard-list__icon--second--active ">
                 <use href="./images/svg/icons.svg#icon-vector"></use>
             </svg></a>
-        </li>
-        <li class="dashboard-list__item">
+         </li>
+         <li class="dashboard-list__item">
              <a class="dashboard-list__link" href="">
                 <svg class="dashboard-list__icon">
                     <use href="./images/svg/icons.svg#icon-wallet">
@@ -206,8 +267,8 @@
             <svg class="dashboard-list__icon--second">
                 <use href="./images/svg/icons.svg#icon-vector"></use>
             </svg></a>
-        </li>
-        <li class="dashboard-list__item">
+         </li>
+         <li class="dashboard-list__item">
              <a class="dashboard-list__link" href="">
                 <svg class="dashboard-list__icon">
                     <use href="./images/svg/icons.svg#icon-discount">
@@ -218,8 +279,8 @@
                     <use href="./images/svg/icons.svg#icon-vector"></use>
                 </svg>
             </a>
-        </li>
-        <li class="dashboard-list__item">
+         </li>
+         <li class="dashboard-list__item">
              <a class="dashboard-list__link" href="">
                 <svg class="dashboard-list__icon">
                     <use href="./images/svg/icons.svg#icon-message">
@@ -229,20 +290,21 @@
             <svg class="dashboard-list__icon--second">
                 <use href="./images/svg/icons.svg#icon-vector"></use>
             </svg></a>
-        </li>
-        </ul>
-        </div>
-        
-        <div class="info-img">
-        <img src="images/Ellipse 8.jpg" alt="Evano" width="42px">
-        <div>
-        <p class="about-name">Evano</p>
-        <p class="about-job">Project Manager</p>
-        </div>
-        </div>
-   </aside>
+         </li>
+         </ul>
+         <div class="info-img">
+            <img src="images/main-images/Evano.jpg" alt="Evano" width="42">
+            <div>
+                <p class="about-name">Evano</p>
+                <p class="about-job">Project Manager</p>
+            </div>
+         </div>
+         </div>
+
+     </aside>
 </div>
 </main>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
