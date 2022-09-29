@@ -45,7 +45,7 @@ body {
   -webkit-box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
           box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
 }
-@media screen and (min-width: 480px) and (max-width: 1039px) {
+@media screen and (min-width: 300px) and (max-width: 1039px) {
   .aside-section {
     display: none;
   }
@@ -996,7 +996,7 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-bottom: 51px;
 }
-@media screen and (min-width: 480px) and (max-width: 1039px) {
+@media screen and (min-width: 300px) and (max-width: 1039px) {
   .hero-title {
     display: none;
   }
@@ -1025,7 +1025,7 @@ body {
   padding-bottom: 64px;
   margin-left: 28px;
 }
-@media screen and (min-width: 480px) and (max-width: 1039px) {
+@media screen and (min-width: 300px) and (max-width: 1039px) {
   .title {
     display: none;
   }
@@ -1036,7 +1036,7 @@ body {
   width: 37px;
   height: 37px;
 }
-@media screen and (min-width: 480px) and (max-width: 1039px) {
+@media screen and (min-width: 300px) and (max-width: 1039px) {
   .title__icon {
     display: none;
   }
@@ -1050,7 +1050,7 @@ body {
   padding-top: 10px;
   margin-left: 4px;
 }
-@media screen and (min-width: 480px) and (max-width: 1039px) {
+@media screen and (min-width: 300px) and (max-width: 1039px) {
   .title__span {
     display: none;
   }

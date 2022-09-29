@@ -2,7 +2,7 @@
 
 .hero-title {
 
-  @media screen and (min-width:$mobile) and (max-width:1039px) {
+  @media screen and (min-width:300px) and (max-width:1039px) {
       display: none;
     }
     display: flex;
@@ -26,7 +26,7 @@
 
 .title {
 
-    @media screen and (min-width:$mobile) and (max-width:1039px) {
+    @media screen and (min-width:300px) and (max-width:1039px) {
         display: none;
       }
 
@@ -46,7 +46,7 @@
   
 
    &__icon {
-    @media screen and (min-width:$mobile) and (max-width:1039px) {
+    @media screen and (min-width:300px) and (max-width:1039px) {
         display: none;
       }
    
@@ -58,7 +58,7 @@
    }
 
    &__span {
-    @media screen and (min-width:$mobile) and (max-width:1039px) {
+    @media screen and (min-width:300px) and (max-width:1039px) {
         display: none;
       }
 
